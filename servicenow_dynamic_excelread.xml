@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="URL" value="https://dev156587.service-now.com/"></parameter>
+	<parameter name="Username" value="admin"></parameter>
+	<parameter name="Password" value="Miracle@2023"></parameter>
+	<parameter name="browser" value='chrome'></parameter>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="assignment_week6day2.Createnewincident_SVN"/>
+      <class name="assignment_week6day2.UpdateIncident_SVN"/>
+      <class name="assignment_week6day2.DeleteIncident_SVN"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
